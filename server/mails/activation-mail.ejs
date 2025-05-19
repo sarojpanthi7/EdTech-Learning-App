@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Navi Learning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+    .email-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .header {
+      background-color: #4A90E2;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      color: #333;
+      font-size: 22px;
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
+    .activation-button {
+      background-color: #4A90E2;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .footer {
+      background-color: #f1f1f1;
+      color: #777;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #4A90E2;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>Welcome to Navi Learning, <%= user.name %></h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+      <h2>Activation Code: <%= activationCode %>!</h2>
+      <p>Thank you for joining the Navi Learning family! We’re thrilled to have you on board, and we can’t wait to see you explore our platform and unlock a world of knowledge.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <p>If you didn’t sign up for Navi Learning, please ignore this email or <a href="mailto:info@naviinfosys.com">contact our support team</a> for assistance.</p>
+      <p>&copy; 2025 Navi Learning. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
