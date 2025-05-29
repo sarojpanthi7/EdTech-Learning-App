@@ -5,12 +5,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "build": "npx tsc",
+    "build": "tsc",
     "start": "node dist/server.js"
   },
   "author": "Saroj Panthi",
   "license": "ISC",
   "description": "",
+  "config": {
+    "production": false
+  },
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/cookie-parser": "^1.4.8",
