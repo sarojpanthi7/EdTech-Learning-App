@@ -11,6 +11,6 @@
     "baseUrl": ".",                         // Helps with path mapping (optional)
     "resolveJsonModule": true               // Allows importing .json files
   },
-  "include": ["server.ts", "**/*.ts"],
+  "include": ["./"],
   "exclude": ["node_modules"]
 }
